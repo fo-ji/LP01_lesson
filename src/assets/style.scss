@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS P Gothic", Verdana, sans-serif;
+}
+
+// Home //
+.top-section {
+  width: 1200px;
+  height: 670px;
+  position: relative;
+  margin: 0px auto;
+  &__text {
+    position: absolute;
+    top: 90px;
+    left: 80px;
+    color: rgb(51, 51, 51);
+    h1 img {
+      width: 390px;
+      height: 180px;
+    }
+    p {
+      width: 390px;
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: lighter;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+    }
+  }
+}
+
+.middle-section--high {
+  width: 1200px;
+  margin: 0px auto;
+  h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 14px;
+    color: rgb(51, 51, 51);
+  }
+  ul {
+    list-style: none;
+    li {
+      margin-left: 100px;
+      margin-top: 100px;
+      .list-container {
+        display: flex;
+        img {
+          width: 375px;
+          height: 375px;
+        }
+        &__text {
+          width: 425px;
+          margin-left: 50px;
+          h3 {
+            font-size: 35px;
+            font-weight: bold;
+            span {
+              background: linear-gradient(transparent 50%, rgb(255, 235, 85) 75%);
+            }
+          }
+          p {
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 35px;
+            letter-spacing: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.middle-section--low {
+  padding: 130px 0px;
+  text-align: center;
+  background-color: rgb(0, 202, 175);
+  color: white;
+  h3 {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 19px;
+    line-height: 90px;
+  }
+  p {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    line-height: 30px;
+  }
+}
+
+.bottom-section {
+  margin: 130px auto;
+  text-align: center;
+  h3 {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 11px;
+    color: rgb(51, 51, 51);
+  }
+  a {
+    display: inline-block;
+    margin-top: 20px;
+  }
+}
