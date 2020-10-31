@@ -1,40 +1,25 @@
-import React ,{ useState, useEffect, useRef, useCallback } from "react";
+import React from "react";
 import ImageHeaderLogo from "../assets/img/header-image.svg"
 
 const Header = () => {
-//  const [isDisplay, setIsDisplay] = useState("")
-//  const isRunning = useRef(false) // スクロール多発防止用フラグ
-//
-//  const style = {
-//    backGround: "#f2f2f3"
-//  }
-//
-//  // リスナに登録する関数
-//  const isScrollToggle = useCallback(() => {
-//    if (isRunning.current) return
-//    isRunning.current = true
-//    const scrollTop = window.pageYOffset || document.documentElement.scrollTop
-//    console.log(scrollTop)
-//    requestAnimationFrame(() => {
-//      if (scrollTop > 1000) {
-//        setIsDisplay(style)
-//      } else {
-//        setIsDisplay("")
-//      }
-//      isRunning.current = false
-//    })
-//  }, [])
-//
-//  // 登録と後始末
-//  useEffect(() => {
-//    document.addEventListener('scroll', isScrollToggle, { passive: true })
-//    return () => {
-//      document.removeEventListener('scroll', isScrollToggle, { passive: true })
-//    }
-//  }, [])
+  function scrollFunction() {
+    const head = document.getElementById("scroll")
+    const headHeight = window.pageYOffset
+    if (headHeight > 250) {
+      head.classList.add("is_active") 
+    } else {
+      head.classList.remove("is_active")
+    }
+  }
+  window.onload = function() {
+    scrollFunction();
+  }
+  window.onscroll = function() {
+    scrollFunction();
+  }
 
   return (
-    <div className="header">
+    <div className="header" id="scroll">
       <div className="header-contents">
         <img src={ImageHeaderLogo} alt="キャリトレ"></img>
         <nav>
@@ -45,8 +30,8 @@ const Header = () => {
             <li>
               <a href="https://www.careertrek.com/login">ログイン</a>
             </li>
-            <li>
-              {/* <div className="fade-in" style={setIsDisplay}>テスト</div> */}
+            <li id="fadein-list">
+              <a href="https://www.careertrek.com/register/email">使ってみる</a>
             </li>
           </ul>
         </nav>
