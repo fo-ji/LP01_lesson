@@ -1,7 +1,8 @@
-import React from "react";
+import React from "react"
 import ImageTopMessage from "../assets/img/top-message.svg"
 import GifPr from "../assets/img/section-pr.gif"
 import GifMatch from "../assets/img/section-match.gif"
+import ImageMessegeBackground from "../assets/img/message_background.png"
 
 const Home = () => {
   return (
@@ -51,20 +52,23 @@ const Home = () => {
         </ul>
       </section>
       <section className="middle-section--low">
-        <h3>
-          使えば使うほど<br />可能性が広がる、出会える
-        </h3>
-        <p>
-          キャリトレはあなたの志向性を学習し、<br />おすすめの仕事をお届けします。<br />自分でも気付いていなかった新しい可能性に出会えます。
-        </p>
+        <img src={ImageMessegeBackground} className="image-background"></img>
+        <div className="position-set">
+          <h3>
+            使えば使うほど<br />可能性が広がる、出会える
+          </h3>
+          <p>
+            キャリトレはあなたの志向性を学習し、<br />おすすめの仕事をお届けします。<br />自分でも気付いていなかった新しい可能性に出会えます。
+          </p>
+        </div>
       </section>
       <section className="bottom-section">
         <h3>
           楽しく、本気で、転職活動を始めよう。
         </h3>
         <a href="https://www.careertrek.com/register/email">
-            <buton>さっそく使ってみる</buton>
-          </a>
+          <buton>さっそく使ってみる</buton>
+        </a>
       </section>
     </div>
   )
