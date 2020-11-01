@@ -4,6 +4,40 @@
    margin: 0px;
    padding: 0px;
 }
+
+@mixin button-small {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 24px;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+  line-height: 14px;
+  background: rgb(249, 18, 94);
+  border-radius: 100px;
+  transition: all 0.5s ease 0s; 
+}
+
+@mixin button-large {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 0.8em;
+  line-height: 1.6;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1.4px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(249, 18, 94);
+  border-radius: 100px;
+  box-shadow: rgba(246, 28, 96, 0.5) 0px 0px 0px 5px;
+  animation: 3s ease 0s infinite normal none running mvcta;
+  transition: all 0.5s ease 0s;
+}
+
 // Home //
 .top-section {
   width: 100%;
@@ -31,9 +65,11 @@
       font-weight: lighter;
     }
     a {
-      display: inline-block;
-      margin-top: 20px;
+      @include button-large;
     }
+    a:hover {
+      transform: scale(1.1, 1.1);
+      transition: all 0.5s ease 0s;}
   }
 }
 
@@ -124,12 +160,15 @@
     color: rgb(51, 51, 51);
   }
   a {
-    display: inline-block;
-    margin-top: 20px;
+    @include button-large;
+  }
+  a:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.5s ease 0s;
   }
 }
 
-// Header //
+// header //
 .header {
   transition: box-shadow 1s ease 0s;
   width: 100%;
@@ -160,20 +199,10 @@
           }
         }
         #fadein-list {
-          transform: translateX(500px);
+          transform: translatex(500px);
           transition: all 0.5s ease;
           a {
-            display: inline-block;
-            margin-left: 20px;
-            font-size: 14px;
-            font-weight: 500;
-            padding: 12px 24px;
-            letter-spacing: 1px;
-            color: rgb(255, 255, 255);
-            line-height: 14px;
-            background: rgb(249, 18, 94);
-            border-radius: 100px;
-            transition: all 0.5s ease 0s;
+            @include button-small;
           } 
         }
       }
@@ -185,21 +214,11 @@
 #scroll.header.is_active {
   transition: box-shadow 1s ease 0s;
   #fadein-list {
-    transform : translateX(0);
+    transform : translatex(0);
     transition: all 0.5s ease;
     a {
-      display: inline-block;
-      margin-left: 20px;
-      font-size: 14px;
-      font-weight: 500;
-      padding: 12px 24px;
-      letter-spacing: 1px;
+      @include button-small;
       cursor: pointer;
-      color: rgb(255, 255, 255);
-      line-height: 14px;
-      background: rgb(249, 18, 94);
-      border-radius: 100px;
-      transition: all 0.5s ease 0s;
     }
   }
 }
