@@ -14,7 +14,7 @@ const Home = () => {
           </h1>
           <p>優良ベンチャーから大手企業まで多数！たくさんの企業が「挑戦したい20代」を<br />待っています</p>
           <a href="https://www.careertrek.com/register/email">
-            <buton>さっそく使ってみる</buton>
+            さっそく使ってみる
           </a>
         </div>
       </section>
@@ -67,7 +67,7 @@ const Home = () => {
           楽しく、本気で、転職活動を始めよう。
         </h3>
         <a href="https://www.careertrek.com/register/email">
-          <buton>さっそく使ってみる</buton>
+          さっそく使ってみる
         </a>
       </section>
     </div>
