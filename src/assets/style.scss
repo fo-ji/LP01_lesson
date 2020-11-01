@@ -151,7 +151,7 @@
 }
 
 .bottom-section {
-  margin: 130px auto;
+  margin: 280px auto 130px;
   text-align: center;
   h3 {
     font-size: 30px;
@@ -168,7 +168,7 @@
   }
 }
 
-// header //
+// Header //
 .header {
   transition: box-shadow 1s ease 0s;
   width: 100%;
@@ -219,6 +219,25 @@
     a {
       @include button-small;
       cursor: pointer;
+    }
+  }
+}
+
+// Footer //
+.footer {
+  text-align: center;
+  &-image {
+    overflow: hidden;
+    height: 130px;
+    background: url(/assets/img/footer-image.svg) center top 0px / 1340px 260px no-repeat;
+  }
+  &-contents {
+    background-color: rgb(57, 57, 57); 
+    p {
+      color: rgb(187, 187, 187);
+      padding: 26px;
+      font-size: 11px;
+      letter-spacing: 3px;
     }
   }
 }
