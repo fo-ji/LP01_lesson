@@ -38,6 +38,8 @@ const Home = () => {
           <li>
             <div className="list-container">
               <div className="list-container__text">
+              <img src={GifMatch} id="pc-hide" alt="マッチしたら企業と直接やり取り可能">
+              </img>
                 <h3>
                   マッチしたら<br /><span>企業と直接やり取り可能</span>
                 </h3>
@@ -45,7 +47,7 @@ const Home = () => {
                   あなたの「興味がある」は企業に届きます。見事マッチすると企業からスカウトが届き、直接のやりとりが可能に。思わぬ企業からスカウトが届くことも
                 </p>
               </div>
-              <img src={GifMatch} alt="マッチしたら企業と直接やり取り可能">
+              <img src={GifMatch} id="sm-hide" alt="マッチしたら企業と直接やり取り可能">
               </img>
             </div>
           </li>
@@ -55,16 +57,16 @@ const Home = () => {
         <img src={ImageMessegeBackground} className="image-background"></img>
         <div className="position-set">
           <h3>
-            使えば使うほど<br />可能性が広がる、出会える
+            使えば使うほど<br />可能性が広がる、<br id="sm-is-active" />出会える
           </h3>
           <p>
-            キャリトレはあなたの志向性を学習し、<br />おすすめの仕事をお届けします。<br />自分でも気付いていなかった新しい可能性に出会えます。
+            キャリトレはあなたの志向性を学習し、<br />おすすめの仕事をお届けします。<br />自分でも気付いていなかった<br id="sm-is-active" />新しい可能性に出会えます。
           </p>
         </div>
       </section>
       <section className="bottom-section">
         <h3>
-          楽しく、本気で、転職活動を始めよう。
+          楽しく、本気で、<br id="sm-is-active" /> 転職活動を始めよう。
         </h3>
         <a href="https://www.careertrek.com/register/email">
           さっそく使ってみる
